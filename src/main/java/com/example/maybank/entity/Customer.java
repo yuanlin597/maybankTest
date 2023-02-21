@@ -7,17 +7,27 @@ import javax.persistence.Id;
 @Entity
 public class Customer {
 
-    @Id
+//    @Id
+//    @Column(name = "ID")
+//    private Long id;
+
     @Column(name = "CUSTOMER_ID")
     private Long customerId;
-    
+
+    @Id
     @Column(name = "ACCOUNT_NUMBER")
     private Long accountNumber;
 
-    public Customer(Long customerId, Long accountNumber) {
-        this.customerId = customerId;
-        this.accountNumber = accountNumber;
+    public Customer() {
     }
+
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
 
     public Long getCustomerId() {
         return customerId;
